@@ -26,6 +26,8 @@ set -e
 #sudo dpkg -P rtorrent
 #sleep 3
 
+# Install prerequisites.
+sudo apt install -y checkinstall build-essential libtool libxml++2.6-dev libssl-dev libncurses5-dev libcurl4-openssl-dev
 
 # Create src and build dirs.
 if [ ! -d $SRC_DIR ]; then
